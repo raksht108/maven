@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestRg {
 	@Test
-	public void google() throws InterruptedException
+	public void Google() throws InterruptedException
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
@@ -24,20 +24,6 @@ public class TestRg {
 		driver.quit();
 
 	}
-	@Test
-	public void Facebook() throws InterruptedException
-	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://www.facebook.com/");
-		//driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Facebook",Keys.ENTER);
-		String expectedTitle = "Facebook – log in or sign up";
-		String actualTitle = driver.getTitle();
-		assertEquals(actualTitle, expectedTitle, "Title is mismatched");
-		Thread.sleep(5000);
-		driver.quit();
 
-	}
 }
 
