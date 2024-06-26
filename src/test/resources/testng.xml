@@ -10,4 +10,13 @@
 			</class>
 		</classes>
 	</test>
+	<test name="Test">
+		<classes>
+			<class name="com.test.rg.TestRg">
+				<methods>
+					<include name="Facebook" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>
