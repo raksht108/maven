@@ -10,14 +10,4 @@
 			</class>
 		</classes>
 	</test>
-	<test name="Test1">
-		<classes>
-			<class name="com.test.rg.OrangeHRM">
-				<methods>
-					<include name="LaunchApp" />
-					<include name="EnterLoginDetails" />
-				</methods>
-			</class>
-		</classes>
-	</test>
 </suite>

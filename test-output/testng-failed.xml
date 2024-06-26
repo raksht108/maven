@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [DemoSuite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="admin123"/>
-  <parameter name="browserName" value="Chrome"/>
-  <parameter name="sleepTime" value="3000"/>
-  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
-  <parameter name="username" value="Admin"/>
-  <test thread-count="5" name="OrangeHRMLogin(failed)">
-    <parameter name="browserName" value="Firefox"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.rg.OrangeHRM">
+      <class name="com.test.rg.TestRg">
         <methods>
-          <include name="VerifyLogin"/>
-          <include name="TearDown"/>
-          <include name="EnterLoginDetails" invocation-numbers="0"/>
-          <include name="InitialiseBrowser"/>
+          <include name="Facebook"/>
         </methods>
-      </class> <!-- com.test.rg.OrangeHRM -->
+      </class> <!-- com.test.rg.TestRg -->
     </classes>
-  </test> <!-- OrangeHRMLogin(failed) -->
-  <test thread-count="5" name="OrangeHRMMyInfo(failed)">
-    <parameter name="browserName" value="Edge"/>
-    <classes>
-      <class name="com.test.rg.OrangeHRM">
-        <methods>
-          <include name="NavigateToMyInfo"/>
-          <include name="VerifyMyInfo"/>
-          <include name="TearDown"/>
-          <include name="EnterLoginDetails" invocation-numbers="0"/>
-          <include name="InitialiseBrowser"/>
-        </methods>
-      </class> <!-- com.test.rg.OrangeHRM -->
-    </classes>
-  </test> <!-- OrangeHRMMyInfo(failed) -->
-</suite> <!-- Failed suite [DemoSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

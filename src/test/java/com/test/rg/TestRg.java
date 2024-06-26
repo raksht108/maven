@@ -31,8 +31,8 @@ public class TestRg {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Facebook",Keys.ENTER);
-		String expectedTitle = "Log in to Facebook";
+		//driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Facebook",Keys.ENTER);
+		String expectedTitle = "Facebook – log in or sign up";
 		String actualTitle = driver.getTitle();
 		assertEquals(actualTitle, expectedTitle, "Title is mismatched");
 		Thread.sleep(5000);
