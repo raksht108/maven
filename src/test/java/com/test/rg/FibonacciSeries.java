@@ -23,6 +23,5 @@ public class FibonacciSeries {
 			second = next;
 		}
 		scanner.close();
-		System.out.println();
 	}
 }

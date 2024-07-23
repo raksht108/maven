@@ -2,6 +2,7 @@ package com.test.rg;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -27,11 +28,13 @@ public class RemoveDuplicatesFromList {
         numbersWithDuplicates.add(8);
         numbersWithDuplicates.add(5);
         
+        Set<Integer> set1=new HashSet<Integer>(numbersWithDuplicates);
+        
         // Remove duplicates
-        List<Integer> numbersWithoutDuplicates = removeDuplicates(numbersWithDuplicates);
+       // List<Integer> numbersWithoutDuplicates = removeDuplicates(numbersWithDuplicates);
         
         // Print the list without duplicates
         System.out.println("Original List with Duplicates: " + numbersWithDuplicates);
-        System.out.println("List without Duplicates: " + numbersWithoutDuplicates);
+        System.out.println("List without Duplicates: " + set1);
     }
 }

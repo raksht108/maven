@@ -1,7 +1,11 @@
 package com.test.rg;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class QuickSort {
 
@@ -52,9 +56,10 @@ public class QuickSort {
         numbers.add(6);
 
         // Perform quick sort
-        quickSort(numbers, 0, numbers.size() - 1);
+    //    quickSort(numbers, 0, numbers.size() - 1);
+        Set<Integer> set=new TreeSet<Integer>(numbers);
 
         // Print sorted list
-        System.out.println("Sorted list: " + numbers);
+        System.out.println("Sorted list: " + set);
     }
 }

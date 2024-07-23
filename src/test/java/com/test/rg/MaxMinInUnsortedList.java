@@ -2,6 +2,8 @@ package com.test.rg;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class MaxMinInUnsortedList {
 
@@ -36,8 +38,15 @@ public class MaxMinInUnsortedList {
         numbers.add(4);
         numbers.add(7);
         numbers.add(2);
-
+        numbers.add(3);
+List<Integer> m=new ArrayList<>();
+        Set<Integer> set1=new TreeSet<Integer>(numbers);
+        System.out.println("The Old List "+numbers);
+        System.out.println("The Sorted List"+set1);
+        m.addAll(set1);
+       System.out.println("Min value is "+m.get(0)+" and Max value is "+m.getLast());
+       
         // Find max and min
-        findMaxMin(numbers);
+        //findMaxMin(numbers);
     }
 }
